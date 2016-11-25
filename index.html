@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="empApp">
+
+<head>
+    <title>Angular First Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.5-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" > -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="angular/angular.min.js"></script>
+    <script src="bootstrap-4.0.0-alpha.5-dist/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" ></script>-->
+    <script src="app/app.js"></script>
+    <script src="app/mainController.js"></script>
+    <script src="app/employee/employeeListDirective.js"></script>
+    <script src="app/employee/employeeEditDirective.js"></script>
+</head>
+
+<body ng-controller="mainController">
+    <employee-list-Directive></employee-list-Directive>
+</body>
+
+</html>

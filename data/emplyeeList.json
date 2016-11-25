@@ -1,0 +1,31 @@
+[{
+    firstname: 'Renuka',
+    lastname: 'Jogade',
+    empcode: 101,
+    joiningdate: '14 Feb 2016'
+}, {
+    firstname: 'Aman',
+    lastname: 'Vinal',
+    empcode: 102,
+    joiningdate: '22 Feb 2016'
+}, {
+    firstname: 'Tanisha',
+    lastname: 'Moze',
+    empcode: 103,
+    joiningdate: '19 Feb 2016'
+}, {
+    firstname: 'Bani',
+    lastname: 'Lour',
+    empcode: 104,
+    joiningdate: '12 Feb 2016'
+}, {
+    firstname: 'Mayuri',
+    lastname: 'Kadam',
+    empcode: 105,
+    joiningdate: '17 Feb 2016'
+}, {
+    firstname: 'Lokesh',
+    lastname: 'Jha',
+    empcode: 104,
+    joiningdate: '15 Feb 2016'
+}]

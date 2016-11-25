@@ -1,0 +1,97 @@
+<!-- Modal -->
+<div class="modal fade in {{showEditEmployeeModal}}" id="employeeId" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="closeEditEmployeeInformation()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Edit Employee Information</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">First Name</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text"  ng-model="editEmpInfo.firstname" id="firstName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Last Name</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="editEmpInfo.lastname" id="lastName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Employee Code</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="editEmpInfo.empcode" id="empcode">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Joining Date</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="editEmpInfo.joiningdate" id="joiningDate">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" ng-click="closeEditEmployeeInformation()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="updateEmployeeInfo()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Employee Modal -->
+<div class="modal fade in {{addEmployeeModal}}" id="addemployeeId" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="closeAddEmployee()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Add New Employee Information</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row ng-hide">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Id</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="newEmpId" id="id" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">First Name</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text"  ng-model="firstname" id="firstName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Last Name</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="lastname" id="lastName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Employee Code</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="empcode" id="empcode">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-3 col-form-label">Joining Date</label>
+                        <div class="col-xs-9">
+                            <input class="form-control" type="text" ng-model="joiningdate" id="joiningDate">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" ng-click="closeAddEmployee()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="addEmployeeInfo()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

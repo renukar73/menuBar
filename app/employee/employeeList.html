@@ -1,0 +1,29 @@
+<h3>Employee List</h3>
+<button class="btn btn-primary" ng-click="addEmployeeInfo()">Add New Employee</button>
+<table class="table table-striped table-hover">
+    <thead class="thead-inverse">
+        <th>#</th>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th> Employee Code</th>
+        <th> Joining Date </th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th ng-show="inlineEdit">Submit</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emp in employeeList">
+            <td>{{emp.id}}</td>
+            <td>{{emp.firstname}}</td>
+            <td>{{emp.lastname}}</td>
+            <td>{{emp.empcode}}</td>
+            <td>{{emp.joiningdate}}</td>
+            <td><a href="#" ng-click="editEmployeeInformation(emp.id)">Edit</a></td>
+            <td><a href="#" ng-click="removeEmployeeInformation(emp.id)">Delete</a></td>
+            <td ng-show="inlineEdit"><a href="#" ng-click="submitEmpInfo(emp.id)">Submit</a></td>
+
+        </tr>
+    </tbody>
+</table>
+
+<employee-edit-Directive></employee-edit-Directive>
